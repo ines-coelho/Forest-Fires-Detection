@@ -133,5 +133,10 @@ body {
   font-size: smaller;
 }
 
+.publication-video p {
+    font-family: serif;
+    font-size: 100px;
+}
+
 
 
