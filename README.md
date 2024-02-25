@@ -1,6 +1,6 @@
 # Forest-Fires-Detection
 
-adicionar descrição
+- adicionar descrição
 
 ## Acknowledgments
 Based on the template [Academic-project-page-template](https://github.com/eliahuhorwitz/Academic-project-page-template) by [eliahuhorwitz](https://github.com/eliahuhorwitz). Part of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
