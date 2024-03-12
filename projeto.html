@@ -89,78 +89,152 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Câmara Térmica</h2>
+            <h2 class="title is-3">Projeto</h2>
             <div class="content has-text-justified">
               <p>
-              Neste caso, vamos usar a câmara térmica MLX90640, com resolução de 32 x 24 pixels que deteta temperaturas 
-              na faixa de -40 ºC a 300 ºC com precisão de aproximadamente 1 ºC; tem um peso de 3.5g; possui ângulo de visão 
-              de 55° x 35° ou 110° x 75° e deteta até 9 metros de distância. 
+                Para o nosso projeto, que é o conjunto ideal para a mais rápida deteção de incêndios florestais, iríamos 
+                precisar dos seguintes equipamentos:
               </p>
               <br/>
-              <img src="static/images/camara1.png" alt="Câmara" style="width:50%;">
+            </div>
+            <h3 class="title is-size-4"> Câmara Térmica</h3>
+            <div class="content has-text-justified">
+              <p>
+                A câmara térmica ideal seria a ECLIPSE ALL-WEATHER LONG-RANGE PTZ CAMERA SYSTEM com uma resolução de 640 x 512 
+                pixéis com uma lente de 19-275 mm Continuous Zoom, uma sensibilidade térmica de 25 mK e com uma deteção de 8,6 km, 
+                reconhecimento de 2,9 km e uma identificação de 1,45 km para um humano. Esta câmara tem um peso de 20 kg com uma 
+                tensão de 12 V e uma potência de 125 W.
+              </p>
+              <br/>
+              <img src="static/images/camara_ideal.png" alt="câmara" style="width:40%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Transmissor </h3>
+            <div class="content has-text-justified">
+              <p>
+                No conceito ideal, precisaríamos de um transmissor para a recolha e transmissão de informação. Este transmissor seria 
+                do tipo LTE wireless communication numa frequência de 800/1400/2400 MHz e transmite a uma distância de até 17 km. O 
+                transmissor tem uma corrente de 0,18 A, 12 V e uma potência de 2,16 W, com um nível de latência de 20ms e peso de 0,2 
+                kg (sem antenas).
+              </p>
+              <br/>
+              <img src="static/images/transmissor.png" alt="transmissor" style="width:40%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Alimentação</h3>
+            <div class="content has-text-justified">
+              <p>
+                Neste caso a alimentação seria uma bateria com uma corrente de 56 Ah, uma tensão de 12 V, uma potência hora de 648 Wh 
+                e com um peso de 6,5 kg. O que fornece a este conjunto uma autonomia de 5,06 h.
+              </p>
+              <br/>
+              <img src="static/images/alimentação.png" alt="bateria" style="width:50%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Drone</h3>
+            <div class="content has-text-justified">
+              <p>
+                Por fim o drone que seria o ideal para o nosso projeto seria o drone DJI FlyCart 30 que percorreria uma distância 
+                máxima de 16 km com um tempo máximo de voo de 6h e um peso máximo suportado de 30kg, sendo o peso dos componentes 
+                26,7 kg.
+              </p>
+              <br/>
+              <img src="static/images/drone_ideal.png" alt="drone" style="width:40%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Receção de Dados</h3>
+            <div class="content has-text-justified">
+              <p>
+                No que diz respeito à receção de dados, será necessário um ecrã para proporcionar a visualização de qualquer imagem
+                térmica capturada pela respetiva câmara. 
+              </p>
+              <br/>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+  
+    
     <section class="section hero">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Drone</h2>
+            <h2 class="title is-3">Projeto Prova de Conceito</h2>
             <div class="content has-text-justified">
               <p>
-                Utilizaremos, também, o drone Klack Mini Dron Klack F185 Pro 4K Profesional HD de 92.5g com um tempo 
-                de voo e de carga de 15 e 100 minutos, respetivamente; possui distância de controlo remoto de 80-100 metros; 
-                a câmara do trono tem uma distância de visão de 20-30 metros com uma resolução de 4K 2560x1440. 
+                Para prova de conceito utilizaremos diferentes equipamentos dos do projeto real, dado ao facto de alguns materiais 
+                serem impossíveis de adquirimos dado ao orçamento, então vamos realizar o nosso projeto em escala pequena, para 
+                tal vamos necessitar dos seguintes equipamentos:
               </p>
               <br/>
-              <img src="static/images/drone.png" alt="Drone" style="width:50%;">
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Microcontrolador</h2>
+            <h3 class="title is-size-4"> Câmara Térmica</h3>
             <div class="content has-text-justified">
               <p>
-               Será necessário um ESP32 para recolher e analisar a informação obtida.
+                Neste caso, vamos usar a câmara térmica MLX90640, com resolução de 32 x 24 (768) pixéis que deteta temperaturas 
+                na faixa de -40 ºC a 300 ºC com precisão de aproximadamente 1 ºC; tem um peso de 4g; possui ângulo de visão de 
+                55° x 35° ou 110° x 75° e deteta até 20 metros de distância para um objeto com 1,8m. Tem uma taxa de atualização 
+                de 64 fps, 16 bits por pixel e um total de bits de 12288 o que implica uma transmissão total de 786432 bps 
+                (0,786432 Mbps). Tem um consumo de 20 mA.
               </p>
               <br/>
-              <img src="static/images/esp32.png" alt="esp32" style="width:50%;">
-              <p>
-                No que diz respeito à receção de dados, será necessário um ecrã para proporcionar a visualização de qualquer
-                imagem térmica capturada pela respetiva câmara.  
-              </p>
+              <img src="static/images/camara1.png" alt="câmara" style="width:40%;">
+              <br/>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section hero">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+            <h3 class="title is-size-4"> ESP32</h3>
             <div class="content has-text-justified">
               <p>
-                No que diz respeito à receção de dados, será necessário um ecrã para proporcionar a visualização de 
-                qualquer imagem térmica capturada pela respetiva câmara.  
+                Para a recolha, análise e transmissão de informação será necessário um ESP32. Este microcontrolador tem uma memória
+                de 4MB e um peso de 3g. Tem uma comunicação Wi-Fi 11b com uma taxa de dados de 11 Mbps. O consumo Normal (240 MHz) 
+                é de 50 mA, em deepsleep é de 7 µA, em lightsleep de 1mA, em Reduced Clock (3MHz) de 3,8 mA e de WiFi operation de 
+                80-180 mA.
               </p>
+              <br/>
+              <img src="static/images/esp32.png" alt="esp32" style="width:40%;">
+              <br/>
+              <p>
+               Este conjunto (ESP32 + MLX90640) tem em conjunto uma corrente de 200 mAh, com uma tensão de 3,3 V e uma potência de 
+                0,66 W com uma autonomia de 16h.
+              </p>
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Alimentação</h3>
+            <div class="content has-text-justified">
+              <p>
+                No que toca a alimentação deste conjunto é necessário um conjunto pilha + regulador de tensão, em que as 
+                características da pilha de lítio são as seguintes: Uma tensão de 9 V, uma corrente de 1200 mAh, uma potência 
+                10,8 W e com um peso de 100g. No que toca ao regulador de tensão vai regular de 9V para 3,3 V e tem um 
+                peso de 30 g.
+              </p>
+              <br/>
+              <img src="static/images/regulador_tensão.png" alt="regulador_tensão" style="width:50%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Drone</h3>
+            <div class="content has-text-justified">
+              <p>
+                O drone que escolhemos utilizar é o DJI Mavic 3 Classic que tem um tempo máximo de voo de 46 minutos, um alcance
+                máximo de 30 km com um peso total de 895 g, sendo que o peso dos componentes é de 140,3g. 
+              </p>
+              <br/>
+              <img src="static/images/drone.png" alt="drone" style="width:40%;">
+              <br/>
+            </div>
+            <h3 class="title is-size-4"> Receção de Dados</h3>
+            <div class="content has-text-justified">
+              <p>
+                No que diz respeito à receção de dados, será necessário um ecrã para proporcionar a visualização de qualquer imagem
+                térmica capturada pela respetiva câmara. 
+              </p>
+              <br/>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-
 
     <section class="section has-background-light">
       <div class="container">
@@ -231,6 +305,6 @@
           </div>
         </div>
       </div>
-    </footer>         
+    </footer>             
 </body>
 </html>
